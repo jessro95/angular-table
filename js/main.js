@@ -10,7 +10,7 @@ sortApp.controller('mainController', function($scope, $http){
        $http.get('data/salaries.json').then(function(response){
     // Response parameter will be an object that has a 'data' key
     // Set $scope.data equal to the data returned in your results
-            $scope.data = response;
+            $scope.data = response.data;
         })
 
 })
